@@ -1,0 +1,257 @@
+::selection {
+  background: rgba(255, 87, 51, 1);
+  color: #fff;
+}
+
+body {
+  padding-top: 55px;
+}
+
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  background: rgba(52, 73, 94, 1);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+header img {
+  margin: 0px;
+  width: 5%;
+}
+
+header ul {
+  margin: 0px;
+  padding: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+header ul li {
+  margin: 5px;
+  padding: 5px;
+  list-style: none;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+header a:hover{
+  color: rgba(255, 87, 51, 1);
+  text-decoration: none;
+}
+
+header .header-btn-ins {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(255, 87, 51, 1);
+  border-radius: 3px;
+}
+header .header-btn-ins:hover {
+  background: rgba(255, 87, 51, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+header .dropdown-item:hover {
+  background: rgba(255, 87, 51, 1);
+  color: #fff;
+}
+header .header-btn-menu {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  header {
+    text-align: right;
+  }
+  header img {
+    margin-top: 23px;
+    margin-left: 20px;
+    width: 28%;
+    float: left;
+  }
+  header .header-box-menu {
+    display: none;
+  }
+  header .header-btn-menu {
+    font-size: 20px;
+    display: inline-flex;
+  }
+}
+
+
+
+/*Section contenido presentación*/
+section {
+  margin: auto;
+  text-align: center;
+}
+
+/*/Primer bloque de presentación/*/
+section .section-box-prest {
+  margin: auto;
+  background-image: url('../img/fondos/city.jpg');
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+section .section-box-prest .tumbl {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  color: rgba(52, 73, 94, 1);
+}
+
+section .section-box-prest .prest-btn-cono {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(255, 87, 51, 1);
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+section .section-box-prest .prest-btn-cono:hover {
+  background: rgba(255, 87, 51, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+@media only screen and (max-width: 800px) {
+  section .section-box-prest {
+    background-size: auto 100%;
+  }
+  section .section-box-prest .tumbl {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/*/Segundo bloque de estadisticas/*/
+section .section-box-est{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: rgba(52, 73, 94, 1);
+  box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+section .section-box-est .content {
+  margin-top: 30px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  section .section-box-est .content {
+    display: inline-block;
+  }
+}
+
+section .section-box-est .content h6{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+section .section-box-est .content .card {
+  margin: 10px;
+  width: 18rem;
+}
+section .section-box-est .content .card p {
+  margin: 0px;
+}
+section .section-box-est .content .card .card-body {
+  text-align: left;
+}
+
+/*/Tercer bloque de equipo de trabajo/*/
+section .section-box-equi {
+  background-image: url('../img/fondos/empresa.jpg');
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+section .section-box-equi .tumbl {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgba(52, 73, 94, 0.9);
+}
+section .section-box-equi .card {
+  margin: 10px;
+  width: 18rem;
+  color: rgba(52, 73, 94, 1);
+  display: inline-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  text-align: left;
+}
+section .section-box-equi .card:hover {
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+section .section-box-equi .card .card-footer {
+  color: rgba(255, 87, 51, 1);
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/*footer pie de pagina*/
+footer {
+  color: rgba(52, 73, 94, 1);
+  text-align: center;
+}
+
+footer .footer-box-inf {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  text-align: left;
+}
+footer .footer-box-inf ul {
+  text-align: left;
+}
+footer .footer-box-inf ul li {
+  list-style: none;
+}
+footer .footer-box-inf ul li a {
+  color: rgba(52, 73, 94, 1);
+  text-decoration: none;
+}
+footer .footer-box-inf ul li a:hover {
+  color: rgba(255, 87, 51, 1);
+  text-decoration: none;
+}
+
+footer .footer-box-inf form {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+footer .footer-box-inf form input {
+  padding: 10px;
+  color: rgba(255, 87, 51, 1);
+  outline: none;
+}
+footer .footer-box-inf form input {
+
+  outline: none;
+}
+
+footer p {
+  margin: 0px;
+  padding: 10px;
+  background: rgba(52, 73, 94, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 10px;
+}
